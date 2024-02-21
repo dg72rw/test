@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заполните заявку</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/assets/index-b4144eb7.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="page">
+      <header class="header">
+        <div class="broker-logo">
+          <h2 class="broker-logo__title">A1 Broker</h2>
+        </div>
+        <div class="store-logo">
+          <h2 class="store-logo__title">Maviwood Store</h2>
+        </div>
+      </header>
+
+      <form class="form" action="" method="post" enctype="multipart/form-data" novalidate>
+        <header class="form__header">
+          <h1 class="form__title">Заполните заявку</h1>
+        </header>
+
+        <div class="form__content">
+
+          <div class="card">
+            <header class="card__header">
+              <h2 class="card__title">Контакты</h2>
+            </header>
+
+            <div class="card__content">
+
+              <div class="input-group">
+                <label class="input-group__label" for="id_fio">Фамилия, имя и отчество</label>
+                <input class="input-group__text-input" id="id_fio" type="text" name="fio" required
+                  placeholder="Введите фамилию, имя и отчество">
+                <span class="input-group__message">Message text</span>
+              </div>
+
+              <div class="input-group">
+                <label class="input-group__label" for="id_phone">Номер телефона</label>
+                <input class="input-group__text-input" id="id_phone" type="tel" name="phone" required
+                  placeholder="Введите номер телефона">
+                <span class="input-group__message">Message text</span>
+              </div>
+
+              <div class="input-group error">
+                <label class="input-group__label" for="id_email">Электронная почта</label>
+                <input class="input-group__text-input" id="id_email" type="email" name="email" required
+                  placeholder="Введите электронную почту">
+                <span class="input-group__message">Это поле обязательно для заполнения</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <header class="card__header">
+              <h2 class="card__title">Документы</h2>
+            </header>
+            <div class="card__content">
+
+              <div class="input-group">
+                <label class="input-group__label" for="id_pass_1">Фото паспорта, разворот 2 и 3 страница</label>
+                <input class="input-group__file-input" id="id_pass_1" type="file" name="pass_1" accept="image/*"
+                  required>
+                <span class="input-group__message">Message text</span>
+              </div>
+
+              <div class="input-group">
+                <label class="input-group__label" for="id_pass_2">Фото паспорта, разворот с пропиской</label>
+                <input class="input-group__file-input" id="id_pass_2" type="file" name="pass_2" required>
+                <span class="input-group__message">Message text</span>
+              </div>
+
+              <div class="input-group error">
+                <label class="input-group__label" for="id_selfie">Селфи с паспортом в руке</label>
+                <input class="input-group__file-input" id="id_selfie" type="file" name="selfie" required>
+                <span class="input-group__message">Это поле обязательно для заполнения</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="agreement">
+            <div class="input-group-checkbox error">
+              <input class="input-group-checkbox__input" type="checkbox" name="agreement" id="id_agreement" required>
+              <label class="input-group-checkbox__label" for="id_agreement">Я соглашаюсь с условиями обработки и
+                использования моих персональных данных</label>
+              <span class="input-group-checkbox__message">Без согласия на обработку данных, дальнейшее заполнение
+                заявки и ее рассмотрение невозможно</span>
+            </div>
+
+          </div>
+
+          <button class="button" type="submit">Отправить</button>
+
+        </div>
+      </form>
+
+      <footer class="footer">
+        <!-- <span class="footer_version-info">v 0.1.5.0</span> -->
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+@import"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+
+:root {
+    --fnt-label: normal normal 500 normal 14px/16px "Roboto", sans-serif;
+    --fnt-input: normal normal 400 normal 14px/20px "Roboto", sans-serif;
+    --fnt-message: normal normal 400 normal 12px/14px "Roboto", sans-serif;
+    --clr-bg-page: #F0F0F0;
+    --clr-bg-card: #ffffff;
+    --clr-label: #252A31;
+    --clr-input: #252A31;
+    --clr-input-field-border: #BAC7D5;
+    --clr-input-field-border-hover: #0172CB;
+    --clr-input-field-border-focus: #0172CB;
+    --clr-input-field-border-error: red;
+    --clr-input-field-caret: #252A31;
+    --clr-placeholder: #697D95
+}
+
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0
+}
+
+a {
+    text-decoration: none
+}
+
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    font-family: Roboto, sans-serif
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    padding: 32px 16px;
+    background-color: var(--clr-bg-page)
+}
+
+.header {
+    display: flex;
+    flex-direction: column
+}
+
+img {
+    height: 60px;
+    width: 160px
+}
+
+.header__logo {
+    color: #ef5a5a;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px
+}
+
+.header__store-logo {
+    text-align: center
+}
+
+footer {
+    padding-top: 24px
+}
+
+footer span {
+    font-size: 12px
+}
+
+.form__header {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0
+}
+
+.form__title {
+    text-align: center;
+    color: #252a31;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: .4px
+}
+
+.form__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px #0000001a
+}
+
+.card__header {
+    padding: 16px 18px
+}
+
+.card__title {
+    color: #252a31;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 16px 24px
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column
+}
+
+.input-group__label {
+    padding: 0 2px 4px;
+    color: var(--clr-label);
+    font: var(--fnt-label)
+}
+
+.input-group__input {
+    padding: 12px;
+    background: transparent;
+    color: var(--clr-input);
+    font: var(--fnt-input);
+    border: 1px solid var(--clr-input-field-border);
+    border-radius: 6px;
+    caret-color: var(--clr-input-field-caret);
+    outline: none;
+    transition: all .2s ease-in
+}
+
+.input-group__input::placeholder {
+    color: var(--clr-placeholder);
+    font: var(--fnt-input)
+}
+
+.input-group__input:hover {
+    border: 1px solid var(--clr-input-field-border-hover);
+    box-shadow: 2px 2px #e8f4fd, 2px -2px #e8f4fd, -2px 2px #e8f4fd, -2px -2px #e8f4fd
+}
+
+.input-group__input:focus {
+    border: 1px solid var(--clr-input-field-border-focus);
+    box-shadow: 2px 2px #e8f4fd, 2px -2px #e8f4fd, -2px 2px #e8f4fd, -2px -2px #e8f4fd
+}
+
+.input-group__message {
+    padding: 2px 2px 2px 0;
+    color: var(--clr-label);
+    font: var(--fnt-message)
+}
+
+.input-group.error .input-group__input {
+    border-color: var(--clr-input-field-border-error)
+}
+
+.input-group.error .input-group__input:hover {
+    border-color: var(--clr-input-field-border-error);
+    box-shadow: 2px 2px #faeaea, 2px -2px #faeaea, -2px 2px #faeaea, -2px -2px #faeaea
+}
+
+.input-group.error .input-group__input:focus {
+    border: 1px solid var(--clr-input-field-border-error);
+    box-shadow: 2px 2px #faeaea, 2px -2px #faeaea, -2px 2px #faeaea, -2px -2px #faeaea
+}
+
+.agreement {
+    display: flex;
+    gap: 8px;
+    align-items: start
+}
+
+.agreement label {
+    color: #252a31;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px
+}
+
+.button {
+    height: 44px;
+    padding: 0 24px;
+    background-color: var(--clr-input-field-border-hover);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase
+}
